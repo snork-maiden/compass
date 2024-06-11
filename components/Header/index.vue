@@ -1,21 +1,11 @@
 <template>
-<header class="header">
-   <nav class="nav">
+  <header class="header">
     <NuxtLink to="/" class="logo">
-        
+      <IconLogo />
     </NuxtLink>
-
-    <ul class="nav-list">
-        <li class="nav-item">
-            <NuxtLink to="/rates" class="nav-link">Тарифы</NuxtLink>
-        </li>
-        <li class="nav-item">
-            <NuxtLink to="/contacts" class="nav-link">Контакты</NuxtLink>
-        </li>
-    </ul>
-   </nav>
-</header>
+    <HeaderNavigation />
+    <a href="tel: +74951184422" class="phone"> +7 495 118-44-22</a>
+    <HeaderAuth />
+  </header>
 </template>
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
