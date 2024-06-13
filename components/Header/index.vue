@@ -8,4 +8,19 @@
     <HeaderAuth />
   </header>
 </template>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@import "~/assets/scss/variables.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: $header-bg-color;
+  color: $invert-text-color;
+  padding: 1em;
+  gap: 1em;
+}
+
+.phone {
+  margin-left: auto;
+}
+</style>

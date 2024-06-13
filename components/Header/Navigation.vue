@@ -10,4 +10,11 @@
     </ul>
   </nav>
 </template>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em 1em;
+}
+</style>

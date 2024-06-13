@@ -1,0 +1,23 @@
+@import "variables.scss";
+@import "reset.scss";
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.button {
+  display: grid;
+  place-items: center;
+  padding: 0.7em 1em;
+  color: $invert-text-color;
+  background-color: $button-bg-color;
+  border-radius: 7px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 34px;
+}
