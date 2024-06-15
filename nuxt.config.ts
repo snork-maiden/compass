@@ -5,14 +5,12 @@ export default defineNuxtConfig({
 
   css: ["~/assets/scss/main.scss"],
 
-  modules: [
-    [
-      '@nuxtjs/google-fonts',
-      {
-        families: {
-            'PT+Sans': true
-        },
+  modules: [[
+    '@nuxtjs/google-fonts',
+    {
+      families: {
+          'PT+Sans': true
       },
-    ],
-  ],
+    },
+  ], "vue3-carousel-nuxt"],
 });

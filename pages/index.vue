@@ -10,5 +10,6 @@ useSeoMeta({
     <h1 class="visually-hidden">Сервис для проверки штрафов Компас</h1>
     <PenaltyCheck/>
     <Benefits/>
+    <Documents/>
   </main>
 </template>
