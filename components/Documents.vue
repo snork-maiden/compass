@@ -1,20 +1,27 @@
 <template>
-  <h2 class="title">Документы</h2>
-  <Carousel  :items-to-show="3" wrapAround>
-    <Slide v-for="slide in slides" :key="slide.id">
+  <section class="documents">
+    <h2 class="section-title">Документы</h2>
+    <Carousel :items-to-show="3" wrapAround>
+      <Slide v-for="slide in slides" :key="slide.id">
         <div class="carousel__item">
-            <h3 class="slide-title">
-              <NuxtLink :to="'/documents/' + slide.goto" class="login">{{slide.title}}</NuxtLink>
-            </h3>
-            <p class="text">{{ slide.text }}</p>
+          <h3 class="slide-title">
+            <NuxtLink :to="'/documents/' + slide.goto" class="link">
+              {{ slide.title }}
+            </NuxtLink>
+          </h3>
+          <p class="text">{{ slide.text }}</p>
+          <NuxtLink :to="'/documents/' + slide.goto" class="button">
+            Перейти
+          </NuxtLink>
         </div>
-    </Slide>
+      </Slide>
 
-    <template #addons>
-      <Navigation />
-      <Pagination />
-    </template>
-  </Carousel>
+      <template #addons>
+        <Navigation />
+        <Pagination />
+      </template>
+    </Carousel>
+  </section>
 </template>
 <script setup>
 const slides = [
@@ -47,7 +54,24 @@ const slides = [
 <style scoped lang="scss">
 @import "~/assets/scss/variables.scss";
 .carousel__item {
-    display: flex;
-    flex-direction: column;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 340px;
+  height: 450px;
+  padding: 25px;
+  border: 1px solid $card-border-color;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.link {
+  color: $accent-text-color;
+  font-size: 31px;
+}
+
+.button {
+  margin-top: auto;
 }
 </style>
