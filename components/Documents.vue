@@ -1,6 +1,6 @@
 <template>
   <h2 class="title">Документы</h2>
-  <Carousel  :items-to-show="3">
+  <Carousel  :items-to-show="3" wrapAround>
     <Slide v-for="slide in slides" :key="slide.id">
         <div class="carousel__item">
             <h3 class="slide-title">

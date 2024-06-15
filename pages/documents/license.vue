@@ -2,9 +2,15 @@
 useSeoMeta({
   title: "Compas. Лицензионный договор",
 });
+
+const way = [
+  { path: "/documents", name: "Документы" },
+  { path: "/documents/license", name: "Лицензионный договор" },
+];
 </script>
 
 <template>
+  <Breadcrumbs :steps="way" />
   <h1 class="title">Лицензионный договор</h1>
   <section class="section">
     <h2 class="title">Заголовок 1</h2>
