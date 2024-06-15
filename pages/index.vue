@@ -5,4 +5,9 @@ useSeoMeta({
 });
 </script>
 
-<template>Hello world</template>
+<template>
+  <main class="main">
+    <h1 class="visually-hidden">Сервис для проверки штрафов Компас</h1>
+    <PenaltyCheck/>
+  </main>
+</template>

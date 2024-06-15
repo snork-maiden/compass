@@ -9,8 +9,10 @@ body {
 }
 
 .button {
-  display: grid;
-  place-items: center;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.7em 1em;
   color: $invert-text-color;
   background-color: $button-bg-color;
