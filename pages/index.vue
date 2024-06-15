@@ -8,8 +8,20 @@ useSeoMeta({
 <template>
   <main class="main">
     <h1 class="visually-hidden">Сервис для проверки штрафов Компас</h1>
-    <PenaltyCheck/>
-    <Benefits/>
-    <Documents/>
+    <PenaltyCheck />
+    <Benefits />
+    <Documents />
   </main>
 </template>
+<style scoped lang="scss">
+@import "~/assets/scss/variables.scss";
+
+.main {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  padding-top: 5.3em;
+}
+</style>

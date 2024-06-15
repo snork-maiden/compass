@@ -11,9 +11,27 @@
       "
       src="assets/imgs/index/banner-img.png"
       alt="Работаем на разных устройствах"
+      width="532"
+      height="335"
     />
   </section>
 </template>
 <style scoped lang="scss">
 @import "~/assets/scss/variables.scss";
+
+.check {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.wrapper {
+  max-width: 563px;
+}
+
+.headline {
+font-size: 41px;
+margin-bottom: 25px;
+}
 </style>
