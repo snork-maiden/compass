@@ -40,17 +40,48 @@ const benefitsData = [
 </script>
 
 <template>
-  <h2 class="title">
-    Плюсы использования сервиса «Компас» для анализа штрафов
-  </h2>
-  <ul class="benefits">
-    <li class="benefit" v-for="benefit of benefitsData" :key="benefit.title">
-      <h3 class="benefit-title">{{ benefit.title }}</h3>
-      <p class="text">{{ benefit.text }}</p>
-      <component :is="benefit.icon" />
-    </li>
-  </ul>
+  <section class="section">
+    <h2 class="section-title">
+      Плюсы использования сервиса «Компас» для анализа штрафов
+    </h2>
+    <ul class="benefits">
+      <li class="benefit" v-for="benefit of benefitsData" :key="benefit.title">
+        <h3 class="benefit-title">{{ benefit.title }}</h3>
+        <p class="text">{{ benefit.text }}</p>
+        <component class="icon" :is="benefit.icon" />
+      </li>
+    </ul>
+  </section>
 </template>
 <style scoped lang="scss">
 @import "~/assets/scss/variables.scss";
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.benefit {
+  width: 362px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto 1fr;
+  gap: 10px 21px;
+  padding: 24px 20px;
+  background-color: $card-bg-color;
+  border: 1px solid #eeeff1;
+  border-radius: 10px;
+}
+
+.benefit-title {
+  font-size: 18px;
+  color: $accent-text-color;
+  align-self: end;
+}
+
+.icon {
+  grid-row: 1/-1;
+  align-self: center;
+}
 </style>

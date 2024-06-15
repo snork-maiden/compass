@@ -24,4 +24,10 @@ useSeoMeta({
   gap: 5em;
   padding-top: 5.3em;
 }
+
+:deep(.section-title) {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 1em;
+}
 </style>
