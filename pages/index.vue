@@ -21,7 +21,7 @@ useSeoMeta({
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 6.9em;
   padding-top: 5.3em;
 }
 

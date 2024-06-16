@@ -41,20 +41,29 @@ const benefitsData = [
 
 <template>
   <section class="section">
+    <!-- Не стала децентрировать заголовок для пиксель перфекта, потому что это выглядит как ошибка -->
     <h2 class="section-title">
       Плюсы использования сервиса «Компас» для анализа штрафов
     </h2>
     <ul class="benefits">
       <li class="benefit" v-for="benefit of benefitsData" :key="benefit.title">
-        <h3 class="benefit-title">{{ benefit.title }}</h3>
-        <p class="text">{{ benefit.text }}</p>
         <component class="icon" :is="benefit.icon" />
+        <div class="wrapper">
+          <h3 class="benefit-title">{{ benefit.title }}</h3>
+          <p class="text">{{ benefit.text }}</p>
+        </div>
       </li>
     </ul>
   </section>
 </template>
 <style scoped lang="scss">
 @import "~/assets/scss/variables.scss";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .benefits {
   display: flex;
@@ -64,24 +73,28 @@ const benefitsData = [
 
 .benefit {
   width: 362px;
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto 1fr;
-  gap: 10px 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
   padding: 24px 20px;
   background-color: $card-bg-color;
   border: 1px solid #eeeff1;
   border-radius: 10px;
 }
 
+.wrapper {
+  max-width: 25em;
+}
+
 .benefit-title {
   font-size: 18px;
   color: $accent-text-color;
   align-self: end;
+  margin-bottom: 10px;
 }
 
 .icon {
-  grid-row: 1/-1;
-  align-self: center;
+  min-width: 57px;
 }
 </style>

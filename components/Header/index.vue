@@ -18,7 +18,7 @@
   color: $invert-text-color;
   display: grid;
   place-items: center;
-  padding: 11px 0;
+  padding: 11px;
   font-size: 18px;
 }
 
