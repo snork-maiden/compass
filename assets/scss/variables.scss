@@ -5,7 +5,8 @@ $secondary-text-color: #383838;
 
 $trinary-text-color: #8F8F8F;
 
-$header-bg-color: black;
+$header-bg: linear-gradient(90deg, #000000 30%, #1C2734 73%);
+;
 
 $main-bg-color: #ffffff;
 $card-bg-color: #FBFCFD;
@@ -14,3 +15,5 @@ $button-bg-color: #0584fe;
 $input-border-color: #BCBCBC;
 
 $max-width: 1164px;
+
+$header-gap: 1.7em

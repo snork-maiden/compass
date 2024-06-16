@@ -1,26 +1,38 @@
 <template>
   <header class="header">
-    <NuxtLink to="/" class="logo">
-      <IconLogo />
-    </NuxtLink>
-    <HeaderNavigation />
-    <a href="tel: +74951184422" class="phone"> +7 495 118-44-22</a>
-    <HeaderAuth />
+    <div class="wrapper">
+      <NuxtLink to="/" class="logo">
+        <IconLogo />
+      </NuxtLink>
+      <HeaderNavigation />
+      <a href="tel: +74951184422" class="phone"> +7 495 118-44-22</a>
+      <HeaderAuth />
+    </div>
   </header>
 </template>
 <style scoped lang="scss">
 @import "~/assets/scss/variables.scss";
 
 .header {
+  background: $header-bg;
+  color: $invert-text-color;
+  display: grid;
+  place-items: center;
+  padding: 11px 0;
+  font-size: 18px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: $max-width;
   display: flex;
   align-items: center;
-  background-color: $header-bg-color;
-  color: $invert-text-color;
-  padding: 1em;
-  gap: 1em;
+  gap: $header-gap;
 }
 
 .phone {
   margin-left: auto;
+  margin-right: 4px;
+  font-weight: 700;
 }
 </style>

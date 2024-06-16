@@ -11,10 +11,12 @@
   </nav>
 </template>
 <style scoped lang="scss">
+@import "~/assets/scss/variables.scss";
+
 .nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5em $header-gap;
 }
 </style>

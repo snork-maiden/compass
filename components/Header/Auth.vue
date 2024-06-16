@@ -1,13 +1,20 @@
 <template>
     <div class="auth">
         <NuxtLink to="/login" class=" login">Вход</NuxtLink>
-        <NuxtLink to="/register" class="button registration">Регистрация</NuxtLink>
+        <NuxtLink to="/register" class="button">Регистрация</NuxtLink>
     </div>
 </template>
 <style scoped lang="scss">
+@import "~/assets/scss/variables.scss";
+
 .auth {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: $header-gap;
+    padding-top: 2px;
+}
+
+.button {
+    font-size: 15px;
 }
 </style>
