@@ -31,7 +31,7 @@
 }
 
 .headline {
-font-size: 41px;
-margin-bottom: 25px;
+  font-size: 41px;
+  margin-bottom: 0.6em;
 }
 </style>

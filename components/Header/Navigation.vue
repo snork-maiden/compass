@@ -16,7 +16,8 @@
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   gap: 0.5em $header-gap;
+  padding-top: 1px;
 }
 </style>

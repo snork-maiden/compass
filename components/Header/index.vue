@@ -31,8 +31,8 @@
 }
 
 .phone {
+  margin-top: 3px;
   margin-left: auto;
-  margin-right: 4px;
   font-weight: 700;
 }
 </style>

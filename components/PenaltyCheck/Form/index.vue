@@ -13,7 +13,7 @@
     <div class="buttons">
       <button type="submit" class="submit button">
         Проверить штрафы
-        <IconArrow />
+        <IconArrow class="arrow" />
       </button>
       <button type="button" class="show-video">
         <IconVideo />
@@ -49,6 +49,17 @@
   display: flex;
   gap: 21px;
   font-size: 18px;
+  margin-bottom: 0.1em;
+}
+
+.submit {
+  align-items: center;
+  gap: 4px;
+  padding: 0.6em 1.1em;
+
+  .arrow {
+    padding-top: 3px;
+  }
 }
 
 .show-video {
@@ -56,23 +67,18 @@
   border: 1px solid $button-bg-color;
   display: flex;
   align-items: center;
-  gap: 4px;
-  padding: 0 20px;
+  gap: 0.3em;
+  padding: 0.55em 1em;
   border-radius: 5px;
 }
 
 .duration {
-color: $accent-text-color;
-font-size: 1rem;
-}
-
-.button {
-  align-items: baseline;
-  gap: 4px;
+  color: $accent-text-color;
+  font-size: 15px;
 }
 
 .conditions {
-font-size: 13px;
-color: $trinary-text-color;
+  font-size: 13px;
+  color: $trinary-text-color;
 }
 </style>
