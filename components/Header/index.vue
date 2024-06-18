@@ -5,7 +5,10 @@
         <IconLogo />
       </NuxtLink>
       <HeaderNavigation />
-      <a href="tel: +74951184422" class="phone"> +7 495 118-44-22</a>
+      <a href="tel: +74951184422" class="phone">
+        <IconPhone class="phone-icon"/>
+        <span class="phone-text">+7 495 118-44-22</span>
+      </a>
       <HeaderAuth />
     </div>
   </header>
@@ -22,6 +25,10 @@
   font-size: 18px;
 }
 
+.logo {
+  display: grid;
+}
+
 .wrapper {
   width: 100%;
   max-width: $max-width;
@@ -34,5 +41,18 @@
   margin-top: 3px;
   margin-left: auto;
   font-weight: 700;
+}
+
+.phone-text {
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+}
+
+  .phone-icon {
+    @media screen and (min-width: 751px) {
+    display: none;
+  }
+  
 }
 </style>

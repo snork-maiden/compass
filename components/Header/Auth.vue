@@ -10,7 +10,9 @@
 .auth {
     display: flex;
     align-items: center;
-    gap: $header-gap;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5em $header-gap;
     padding-top: 2px;
 }
 

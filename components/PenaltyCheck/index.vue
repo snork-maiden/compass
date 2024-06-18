@@ -24,6 +24,7 @@
   align-items: start;
   flex-wrap: wrap;
   gap: 40px;
+  margin-bottom: 13px;
 }
 
 .wrapper {

@@ -68,6 +68,7 @@ const benefitsData = [
 .benefits {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 35px;
 }
 

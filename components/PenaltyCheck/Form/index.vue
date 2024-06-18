@@ -15,11 +15,7 @@
         Проверить штрафы
         <IconArrow class="arrow" />
       </button>
-      <button type="button" class="show-video">
-        <IconVideo />
-        <span class="btn-text">О сервисе</span>
-        <span class="duration">(1 мин. 20 сек)</span>
-      </button>
+      <PenaltyCheckFormVideo />
     </div>
     <p class="conditions">
       Нажимая «Проверить штрафы» вы соглашаетесь с политикой обработки
@@ -60,21 +56,6 @@
   .arrow {
     padding-top: 3px;
   }
-}
-
-.show-video {
-  background: none;
-  border: 1px solid $button-bg-color;
-  display: flex;
-  align-items: center;
-  gap: 0.3em;
-  padding: 0.55em 1em;
-  border-radius: 5px;
-}
-
-.duration {
-  color: $accent-text-color;
-  font-size: 15px;
 }
 
 .conditions {

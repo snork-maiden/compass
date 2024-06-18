@@ -18,10 +18,11 @@ useSeoMeta({
 
 .main {
   max-width: $max-width;
+  padding: 1em;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 6.9em;
+  gap: 85px;
   padding-top: 5.3em;
 }
 
