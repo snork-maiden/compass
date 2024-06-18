@@ -33,8 +33,10 @@
 
 .fields {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
   gap: 16px 30px;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1.5fr 1fr;
+  }
 }
 
 .registration {
@@ -43,6 +45,7 @@
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 21px;
   font-size: 18px;
   margin-bottom: 0.1em;
