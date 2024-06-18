@@ -17,17 +17,17 @@ useSeoMeta({
 @import "~/assets/scss/variables.scss";
 
 .main {
-  max-width: $max-width;
+  max-width: Min(#{$max-width}, 98vw);
   padding: 1em;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 85px;
-  padding-top: 5.3em;
+  gap: clamp(2em, 5vh, 85px);
+  padding-top: clamp(2.5em, 7vh, 5.3em) ;
 }
 
 :deep(.section-title) {
-  font-size: 34px;
+  font-size: clamp(1.7em, 4vw, 34px);
   text-align: center;
   margin-bottom: 1em;
 }

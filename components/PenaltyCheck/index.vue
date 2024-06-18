@@ -35,7 +35,7 @@
 }
 
 .headline {
-  font-size: clamp(1.7em, 4vw, 41px);
+  font-size: clamp(1.9em, 4vw, 41px);
   margin-bottom: 0.6em;
 }
 

@@ -70,10 +70,12 @@ const benefitsData = [
   flex-wrap: wrap;
   justify-content: center;
   gap: 35px;
+  flex-grow: 1;
 }
 
 .benefit {
-  width: 362px;
+  flex: 1 1 300px;
+  max-width: 362px;
   display: flex;
   align-items: center;
   justify-content: space-between;
